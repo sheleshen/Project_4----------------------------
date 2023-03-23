@@ -497,3 +497,89 @@ h2 {
 
 
 /* Footer */
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.footer-about {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--secondary-semi);
+    width: 40%;
+}
+
+.network {
+    display: flex;
+    gap: 5px;
+}
+
+.text-network {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--secondary-semi);
+}
+
+.facebook-icon {
+    width: 27px;
+    height: 27px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.title-contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.text-contacts {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--secondary-semi);
+}
+
+.description-contacts {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--secondary-semi);
+}
+
+.contacts-mail {
+    font-weight: 300;
+}
+
+.license {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+.license-text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: var(--secondary-semi);
+}
+
+.limiter {
+    width: 1px;
+    height: 24px;
+    background: var(--secondary-semi);
+}
