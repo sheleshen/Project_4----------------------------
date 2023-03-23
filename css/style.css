@@ -408,7 +408,8 @@ h2 {
 }
 
 .maps-img {
-    background-image: url('/images/map-background.png');
+    background: linear-gradient(0deg, rgba(240, 249, 255, 0.8), rgba(240, 249, 255, 0.8)), url('/images/map-background.png');
+    /* background-image: url('/images/map-background.png'); */
     background-size: cover;
     background-position: top;
     
