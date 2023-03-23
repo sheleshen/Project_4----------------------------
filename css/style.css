@@ -28,6 +28,8 @@
     --white: #ffffff;
     --gap-menu: 47px;
     --gap-services: 73px;
+    --gap-reviews: 20px;
+    --shadow: rgba(115, 115, 115, 0.25);
 }
 
 p, ul, li, h1, h2, h3, h4, h5, h6 {
@@ -344,3 +346,50 @@ h2 {
 }
 
 /* Отзывы */
+
+.title-reviews {
+    padding: 128px 0 83px 0;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-reviews);
+    padding-bottom: 154px;
+}
+
+.reviews-item {
+    width: calc((100% - (var(--gap-reviews)*1))/2);
+    padding: 18px 18px 20px 25px;
+    border: 1px solid var(--grey-middle);
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 1px 2px 4px var(--shadow);
+    display: flex;
+    height: 178px;                  /* Сделать одной высоты без height */
+}
+
+.reviews-img {
+    padding-right: 10px;
+}
+
+.reviews-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--secondary-light);
+    padding-bottom: 10px;
+}
+
+.info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--dark-elight);
+}
