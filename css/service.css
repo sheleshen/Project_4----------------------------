@@ -87,6 +87,12 @@ a:hover {
     width: fit-content; 
 }
 
+.btn:hover {
+    background-color: var(--secondary-middle);
+    cursor: pointer;
+    transition: background-color 300ms linear; 
+}
+
 @media (max-width: 320px) {
     .btn {
         font-weight: 700;
