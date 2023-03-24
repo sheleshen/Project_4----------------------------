@@ -15,6 +15,9 @@
     --secondary-middle: #0369a1;
     --secondary-light: #0284c7;
     --secondary-elight: #0ea5e9;
+    --text: #0B4269;
+    --price-background: #F0F9FF;
+    --accent-green: #26992A;
     --dark: #171717;
     --dark-semi: #262626;
     --dark-middle: #404040;
@@ -48,6 +51,14 @@ a:hover {
 }
 
 .container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.container-header {
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
@@ -107,6 +118,7 @@ h2 {
     line-height: 54px;
     text-align: center;
     color: var(--secondary-middle);
+    padding-bottom: 40px;
 }
 
 @media (max-width: 320px) {
@@ -230,7 +242,73 @@ h2 {
     }
 }
 
+/* Лечение кариеса */
 
+.title-treatment {
+    text-align: left;
+    /* padding-bottom: 40px; */
+}
+
+.description-treatment {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.text-treatment {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--text);
+
+}
+
+.img-treatment {
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px rgba(115, 115, 115, 0.25);
+    background: linear-gradient(0deg, rgba(2, 132, 199, 0.1), rgba(2, 132, 199, 0.1)), url(/images/patient.png);
+}
+
+/* Цены на услуги */
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price-item {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 56px;
+    border-radius: 30px;
+}
+
+.group-blue {
+    background: var(--price-background);
+}
+
+.group-green {
+    background: var(--main-color-light);
+}
+
+.text-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-semi); 
+}
+
+.blue-accent {
+    color: var(--secondary-elight);
+}
+
+.green-accent {
+    color: var(--accent-green);
+}
 
 
 
