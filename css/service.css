@@ -119,6 +119,7 @@ h2 {
     text-align: center;
     color: var(--secondary-middle);
     padding-bottom: 40px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 320px) {
@@ -272,6 +273,10 @@ h2 {
 
 /* Цены на услуги */
 
+.section-price {
+    padding-top: 0px;
+}
+
 .price-list {
     display: flex;
     flex-direction: column;
@@ -311,20 +316,12 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
+
+.container-footer {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
 
 .footer-info {
     display: flex;

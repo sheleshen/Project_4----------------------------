@@ -139,6 +139,7 @@ h2 {
     line-height: 54px;
     text-align: center;
     color: var(--secondary-middle);
+    text-transform: uppercase;
 }
 
 @media (max-width: 320px) {

@@ -32,6 +32,7 @@
     --shadow: rgba(115, 115, 115, 0.25);
     --gap-maps: 23px;
     --gap-icon: 10px;
+    --gap-doctors-card: 20px;
 }
 
 p, ul, li, h1, h2, h3, h4, h5, h6 {
@@ -51,6 +52,19 @@ a:hover {
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.container-header {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-footer {
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 @media (max-width: 320px) {
@@ -107,6 +121,8 @@ h2 {
     line-height: 54px;
     text-align: center;
     color: var(--secondary-middle);
+    padding-bottom: 40px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 320px) {
@@ -159,11 +175,123 @@ h2 {
 }
 
 
+/* Специалисты клиники */
 
+.about-doctors {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 60px;
+}
 
+.text-doctors {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: var(--dark-elight);
+}
 
+.search-doctors {
+    background: var(--main-color-light);
+    border: 1px solid var(--main-color-middle);
+    border-radius: 20px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+.search-item {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    align-items: center;
+}
 
+.search-icon {
+    color: var(--grey);
+}
+
+.delimiter {
+    width: 2px;
+    height: 25px;
+    background: var(--grey);
+}
+
+.text-search-line {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 38px;
+    color: var(--grey);
+}
+
+/* Доктора */
+
+.cards-doctors-list {
+    /* width: calc(100% - (var(--gap-doctors-card)*2)/3); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-doctors-card); 
+}
+
+.cards-doctors--item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.foto-doctor {
+    box-shadow: 2px 2px 4px rgba(115, 115, 115, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-doctor {
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.doctors-data {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.full-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--dark-middle);
+}
+
+.job-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--dark-middle);
+}
+
+.btn-cards-doctors {
+    background-color: var(--white);
+    border: 1px solid var(--secondary-light); 
+    color: var(--secondary-light);
+    box-shadow: none;
+}
+
+.btn-cards-doctors:hover {
+    background-color: var(--secondary-light);
+    border: 1px solid var(--secondary-light); 
+    color: var(--white);
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 300ms linear;
+}
 
 
 
