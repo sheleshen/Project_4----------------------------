@@ -131,6 +131,15 @@ a:hover {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .btn {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 14px 40px 12px 40px; 
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .btn {
         font-weight: 700;
@@ -151,6 +160,13 @@ h1 {
     h1 {
         font-size: 26px;
         line-height: 29px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        line-height: 39px;
     }
 }
 
@@ -183,6 +199,13 @@ h2 {
     h2 {
         font-size: 24px;
         line-height: 24px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+        line-height: 30px;
     }
 }
 
@@ -242,6 +265,12 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .nav-list {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .nav-list {
         display: none;
@@ -268,7 +297,14 @@ h2 {
     background-position: top;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
+    .hero-img {
+        background-position: top;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .hero-img {
         background-position: top;
         object-fit: cover;
@@ -280,7 +316,7 @@ h2 {
         background-position: top;
         object-fit: cover;
     }
-}
+} */
 
 .hero-content {
     width: calc(100%/2);
@@ -295,6 +331,14 @@ h2 {
         width: 90%;
         padding-bottom: 40px;
         padding-top: 40px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    .hero-content {
+        width: 90%;
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
 }
 
@@ -320,6 +364,12 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .hero-title {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .hero-title {
         padding-bottom: 20px;
     }
@@ -355,6 +405,12 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .hero-description {
+        padding-bottom: 30px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .hero-description {
         padding-bottom: 40px;
@@ -369,6 +425,13 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .title-services {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .title-services {
         padding-top: 40px;
         padding-bottom: 30px;
@@ -403,6 +466,13 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .services-list {
         flex-direction: column;
@@ -421,6 +491,12 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .services-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .services-item {
         width: 100%;
     }
@@ -493,12 +569,24 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .about-content {
+        padding: 40px 0;
+    }
+}
+
 .title-about {
     color: var(--secondary);
     padding-bottom: 46px;
 }
 
 @media (max-width: 600px) {
+    .title-about {
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .title-about {
         padding-bottom: 30px;
     }
@@ -521,6 +609,14 @@ h2 {
 @media (max-width: 600px) {
     .about-description {
         font-size: 14px;
+        line-height: 24px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    .about-description {
+        font-size: 16px;
         line-height: 24px;
         padding-bottom: 40px;
     }
@@ -559,6 +655,12 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .title-reviews {
+        padding: 40px 0 30px 0;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .title-reviews {
         padding: 50px 0 40px 0;
@@ -580,6 +682,13 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .reviews-list {
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .reviews-list {
         flex-direction: column;
         padding-bottom: 60px;
@@ -619,6 +728,15 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .reviews-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .reviews-item {
         flex-direction: row;
@@ -643,6 +761,12 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .reviews-info {
+        align-items: center;
+    }
+}
+
 .info-name {
     font-weight: 700;
     font-size: 24px;
@@ -656,6 +780,12 @@ h2 {
     font-size: 14px;
     line-height: 19px;
     color: var(--dark-elight);
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    .info-text {
+        align-items: center;
+    }
 }
 
 
@@ -705,6 +835,12 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .title-maps {
+        padding: 40px 0 30px 0;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .title-maps {
         padding: 50px 0 40px 0;
@@ -726,6 +862,13 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .maps-list {
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .maps-list {
         flex-direction: column;
         padding-bottom: 60px;
@@ -755,6 +898,13 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .maps-item {
+        width: 100%;
+        /* flex-grow: 1; */
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .maps-item {
         width: 100%;
@@ -776,6 +926,18 @@ h2 {
     align-items: flex-start;
 }
 
+@media (max-width: 660px) {
+    .maps-adress {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    .maps-adress {
+        padding-bottom: 20px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .maps-adress {
         padding-bottom: 20px;
@@ -788,6 +950,12 @@ h2 {
     padding-bottom: 60px;
     gap: var(--gap-icon);
     align-items: flex-start;
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    .maps-working {
+        padding-bottom: 30px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -834,6 +1002,13 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .footer-info {
         display: flex;
@@ -850,6 +1025,14 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .footer-about {
+        font-size: 16px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .footer-about {
         font-size: 16px;
         width: 100%;
@@ -895,6 +1078,13 @@ h2 {
     }
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+    .contacts-list {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .contacts-list {
         flex-direction: column;
@@ -903,6 +1093,12 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .contacts-item {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
     .contacts-item {
         padding-bottom: 20px;
     }
@@ -947,6 +1143,13 @@ h2 {
     gap: 10px;
     padding-bottom: 50px;
     align-items: center;
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    .license {
+        justify-content: start;
+        padding-bottom: 30px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
