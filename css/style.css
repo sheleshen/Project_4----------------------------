@@ -55,13 +55,29 @@ a:hover {
 
 @media (max-width: 600px) {
     .container {
-        max-width: calc(100% - 20px);
+        max-width: calc(100% - 40px);
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) and (max-width: 768px) {
+    .container {
+        max-width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
     .container {
         max-width: calc(100% - 20px);
         margin-left: auto;
@@ -115,7 +131,7 @@ a:hover {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .btn {
         font-weight: 700;
         font-size: 16px;
@@ -138,10 +154,17 @@ h1 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     h1 {
         font-size: 46px;
         line-height: 49px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
     }
 }
 
@@ -163,12 +186,20 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     h2 {
         font-size: 36px;
         line-height: 34px;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    h2 {
+        font-size: 38px;
+        line-height: 34px;
+    }
+}
+
 
 /* header */
 
@@ -211,7 +242,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .nav-list {
         display: none;
     }
@@ -244,7 +275,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hero-img {
         background-position: top;
         object-fit: cover;
@@ -267,11 +298,19 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hero-content {
         width: 90%;
         padding-bottom: 70px;
         padding-top: 70px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .hero-content {
+        width: 50%;
+        padding-bottom: 80px;
+        padding-top: 80px;
     }
 }
 
@@ -286,9 +325,15 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hero-title {
         padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .hero-title {
+        padding-bottom: 40px;
     }
 }
 
@@ -310,7 +355,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hero-description {
         padding-bottom: 40px;
     }
@@ -319,22 +364,35 @@ h2 {
 /* Услуги */
 
 .title-services {
-    padding-top: 84px;
-    padding-bottom: 54px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px) {
+    .title-services {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .title-services {
         padding-top: 50px;
         padding-bottom: 40px;
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .title-services {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+}
 
 .services-list {
     display: flex;
     flex-direction: row;
-    padding: 64px 0;
+    padding: 60px 0;
     gap: var(--gap-services);
 }
 
@@ -345,7 +403,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .services-list {
         flex-direction: column;
         gap: 10px;
@@ -368,9 +426,16 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .services-item {
         width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .services-item {
+        width: calc((100% - (var(--gap-services)*2))/3);
+        /* flex-grow: 1; */
     }
 }
 
@@ -422,9 +487,27 @@ h2 {
     padding: 60px 0;
 }
 
+@media (max-width: 600px) {
+    .about-content {
+        padding: 40px 0;
+    }
+}
+
 .title-about {
     color: var(--secondary);
     padding-bottom: 46px;
+}
+
+@media (max-width: 600px) {
+    .title-about {
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .title-about {
+        padding-bottom: 40px;
+    }
 }
 
 .about-description {
@@ -443,11 +526,19 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .about-description {
         font-size: 18px;
         line-height: 24px;
         padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .about-description {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 60px;
     }
 }
 
@@ -459,18 +550,24 @@ h2 {
 /* Отзывы */
 
 .title-reviews {
-    padding: 128px 0 83px 0;
+    padding: 120px 0 80px 0;
 }
 
 @media (max-width: 600px) {
     .title-reviews {
-        padding: 40px 0 20px 0;
+        padding: 40px 0 30px 0;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .title-reviews {
         padding: 50px 0 40px 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .title-reviews {
+        padding: 60px 0 40px 0;
     }
 }
 
@@ -489,9 +586,15 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .reviews-list {
         flex-direction: column;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .reviews-list {
         padding-bottom: 60px;
     }
 }
@@ -516,7 +619,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .reviews-item {
         flex-direction: row;
         align-items: start;
@@ -602,9 +705,15 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .title-maps {
         padding: 50px 0 40px 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .title-maps {
+        padding: 60px 0 40px 0;
     }
 }
 
@@ -623,7 +732,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .maps-list {
         flex-direction: column;
         padding-bottom: 50px;
@@ -646,7 +755,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .maps-item {
         width: 100%;
     }
@@ -667,7 +776,7 @@ h2 {
     align-items: flex-start;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .maps-adress {
         padding-bottom: 20px;
     }
@@ -681,7 +790,13 @@ h2 {
     align-items: flex-start;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .maps-working {
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
     .maps-working {
         padding-bottom: 40px;
     }
@@ -719,7 +834,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .footer-info {
         display: flex;
         flex-direction: column;
@@ -742,7 +857,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .footer-about {
         width: 100%;
         padding-bottom: 20px;
@@ -780,7 +895,7 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .contacts-list {
         flex-direction: column;
         padding-bottom: 20px;
@@ -793,12 +908,11 @@ h2 {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .contacts-item {
         padding-bottom: 20px;
     }
 }
-
 
 .title-contacts {
     display: flex;
@@ -835,9 +949,15 @@ h2 {
     align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .license {
         justify-content: start;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .license {
         padding-bottom: 30px;
     }
 }
