@@ -62,25 +62,23 @@ a:hover {
     padding-top: 80px;
 }
 
-.container-header {
-    max-width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @media (max-width: 600px) {
     .container {
         max-width: calc(100% - 40px);
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 40px;
+        padding-top: 40px;
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .container {
         max-width: calc(100% - 40px);
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
 }
 
@@ -89,6 +87,8 @@ a:hover {
         max-width: calc(100% - 40px);
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 60px;
+        padding-top: 60px;
     }
 }
 
@@ -98,6 +98,48 @@ a:hover {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.container-header {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+    .container-header {
+        max-width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .container-header {
+        max-width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-header {
+        max-width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .container-header {
+        max-width: calc(100% - 20px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.hero-container {
+    padding: 0px;
 }
 
 .btn {
@@ -130,7 +172,7 @@ a:hover {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .btn {
         font-weight: 700;
         font-size: 14px;
@@ -162,7 +204,7 @@ h1 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     h1 {
         font-size: 36px;
         line-height: 39px;
@@ -198,13 +240,15 @@ h2 {
     h2 {
         font-size: 24px;
         line-height: 24px;
+        padding-bottom: 30px;
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     h2 {
         font-size: 30px;
         line-height: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -263,7 +307,7 @@ h2 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .nav-list {
         display: none;
     }
@@ -302,7 +346,7 @@ h2 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .hero-img {
         background-position: top;
         object-fit: cover;
@@ -332,7 +376,7 @@ h2 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .hero-content {
         width: 90%;
         padding-bottom: 50px;
@@ -367,7 +411,7 @@ h2 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .hero-title {
         padding-bottom: 20px;
     }
@@ -403,7 +447,7 @@ h2 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .hero-description {
         padding-bottom: 30px;
     }
@@ -422,18 +466,54 @@ h2 {
     /* padding-bottom: 40px; */
 }
 
+
+
 .description-treatment {
     display: flex;
     flex-direction: row;
     gap: 25px;
 }
 
+@media (max-width: 600px) {
+    .description-treatment {
+        flex-direction: column;
+    }
+}
+
 .text-treatment {
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
-    color: var(--text);
+    color: var(--text); 
+}
 
+@media (max-width: 600px) {
+    .text-treatment {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .text-treatment {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-treatment {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .text-treatment {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 60px;
+    }
 }
 
 .img-treatment {
@@ -441,6 +521,13 @@ h2 {
     border-radius: 20px;
     box-shadow: 2px 4px 4px rgba(115, 115, 115, 0.25);
     background: linear-gradient(0deg, rgba(2, 132, 199, 0.1), rgba(2, 132, 199, 0.1)), url(/images/patient.png);
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .img-treatment {
+        width: 100%;
+    }
 }
 
 /* Цены на услуги */
@@ -456,9 +543,7 @@ h2 {
 }
 
 .price-item {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    padding-left: 56px;
+    padding: 26px 40px;
     border-radius: 30px;
 }
 
@@ -477,6 +562,30 @@ h2 {
     display: flex;
     align-items: center;
     color: var(--secondary-semi); 
+    gap: 5px;
+}
+
+@media (max-width: 600px) {
+    .text-price {
+        font-size: 14px;
+        line-height: 17px;
+        gap: 7px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .text-price {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-price {
+        font-size: 18px;
+        line-height: 25px;
+        gap: 7px;
+    }
 }
 
 .blue-accent {
@@ -502,12 +611,56 @@ h2 {
     padding-top: 50px;
 }
 
+@media (max-width: 600px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .footer-about {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     color: var(--secondary-semi);
     width: 40%;
+}
+
+@media (max-width: 600px) {
+    .footer-about {
+        font-size: 16px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .footer-about {
+        font-size: 16px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-about {
+        width: 100%;
+        padding-bottom: 20px;
+    }
 }
 
 .network {
@@ -532,6 +685,45 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+    .contacts-list {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .contacts-list {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contacts-list {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contacts-item {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .contacts-item {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contacts-item {
+        padding-bottom: 20px;
+    }
 }
 
 .title-contacts {
@@ -566,6 +758,27 @@ h2 {
     justify-content: end;
     gap: 10px;
     padding-bottom: 50px;
+    align-items: center;
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .license {
+        justify-content: start;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .license {
+        justify-content: start;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .license {
+        padding-bottom: 30px;
+    }
 }
 
 .license-text {
