@@ -60,10 +60,64 @@ a:hover {
     padding-top: 80px;
 }
 
+@media (max-width: 600px) {
+    .container {
+        max-width: calc(100% - 40px);
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .container {
+        max-width: calc(100% - 40px);
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: calc(100% - 40px);
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .container {
+        max-width: calc(100% - 20px);
+    }
+}
+
 .container-header {
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 600px) {
+    .container-header {
+        max-width: calc(100% - 40px);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .container-header {
+        max-width: calc(100% - 40px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-header {
+        max-width: calc(100% - 40px);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .container-header {
+        max-width: calc(100% - 20px);
+    }
 }
 
 .container-footer {
@@ -79,7 +133,7 @@ a:hover {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .container {
         max-width: calc(100% - 40px);
         margin-left: auto;
@@ -127,7 +181,7 @@ a:hover {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .btn {
         font-weight: 700;
         font-size: 14px;
@@ -159,7 +213,7 @@ h1 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     h1 {
         font-size: 36px;
         line-height: 39px;
@@ -199,7 +253,7 @@ h2 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     h2 {
         font-size: 30px;
         line-height: 30px;
@@ -262,7 +316,7 @@ h2 {
     }
 }
 
-@media (min-width: 660px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .nav-list {
         display: none;
     }
@@ -275,6 +329,19 @@ h2 {
 }
 
 
+/* Гамбургер меню для мобильной версии */
+
+/* .hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 320px) {
+    .hamburger-menu {
+        display: block;
+    }
+} */
+
+
 /* Специалисты клиники */
 
 .about-doctors {
@@ -282,6 +349,34 @@ h2 {
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 60px;
+}
+
+@media (max-width: 600px) {
+    .about-doctors {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .about-doctors {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-doctors {
+        width: 90%;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .about-doctors {
+        width: 90%;
+        padding-bottom: 50px;
+    }
 }
 
 .text-doctors {
@@ -292,6 +387,35 @@ h2 {
     color: var(--dark-elight);
 }
 
+@media (max-width: 600px) {
+    .text-doctors {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .text-doctors {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-doctors {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .text-doctors {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 60px;
+    }
+}
+
 .search-doctors {
     background: var(--main-color-light);
     border: 1px solid var(--main-color-middle);
@@ -299,6 +423,18 @@ h2 {
     width: 85%;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media (max-width: 600px) {
+    .search-doctors {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .search-doctors {
+        width: 100%;
+    }
 }
 
 .search-item {
@@ -328,17 +464,69 @@ h2 {
     color: var(--grey);
 }
 
+@media (max-width: 600px) {
+    .text-search-line {
+        font-size: 15px;
+        line-height: 29px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .text-search-line {
+        font-size: 15px;
+        line-height: 29px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-search-line {
+        font-size: 17px;
+        line-height: 34px;
+    }
+}
+
 /* Доктора */
 
 .cards-doctors-list {
-    /* width: calc(100% - (var(--gap-doctors-card)*2)/3); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--gap-doctors-card); 
 }
 
-.cards-doctors--item {
+@media (max-width: 600px) {
+    .cards-doctors-list {
+        /* text-align: center; */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .cards-doctors-list {
+        /* text-align: center; */
+    }
+}
+
+.cards-doctors-item {
+    width: calc(100% - var(--gap-doctors-card))/2;
+    /* display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; */
+}
+
+@media (max-width: 600px) {
+    .cards-doctors-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .cards-doctors-item {
+        width: calc(100% - var(--gap-doctors-card))/2;
+    }
+}
+
+.cards-doctors-description {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -352,6 +540,7 @@ h2 {
 }
 
 .img-doctor {
+    /* width: 100%; */
     height: 100%;
     object-position: center;
     object-fit: cover;
@@ -412,12 +601,56 @@ h2 {
     padding-top: 50px;
 }
 
+@media (max-width: 600px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .footer-about {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     color: var(--secondary-semi);
     width: 40%;
+}
+
+@media (max-width: 600px) {
+    .footer-about {
+        font-size: 16px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .footer-about {
+        font-size: 16px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-about {
+        width: 100%;
+        padding-bottom: 20px;
+    }
 }
 
 .network {
@@ -442,6 +675,45 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+    .contacts-list {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .contacts-list {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contacts-list {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contacts-item {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .contacts-item {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contacts-item {
+        padding-bottom: 20px;
+    }
 }
 
 .title-contacts {
@@ -476,6 +748,27 @@ h2 {
     justify-content: end;
     gap: 10px;
     padding-bottom: 50px;
+    align-items: center;
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .license {
+        justify-content: start;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .license {
+        justify-content: start;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .license {
+        padding-bottom: 30px;
+    }
 }
 
 .license-text {
