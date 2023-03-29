@@ -38,7 +38,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
+a, .link-logo {
     text-decoration: none;
     color: var(--white);
 }
@@ -46,6 +46,10 @@ a {
 a:hover {
     color: var(--main-color-middle);
     transition: color 300ms linear;
+}
+
+.link-logo:hover {
+    color: var(--white);
 }
 
 .container {
@@ -85,22 +89,6 @@ a:hover {
         margin-right: auto;
     }
 }
-
-/* @media (max-width: 1024px) {
-    .container {
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width: 1280px) {
-    .container {
-        max-width: 1140px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-} */
 
 .btn {
     background-color: var(--secondary-elight);
