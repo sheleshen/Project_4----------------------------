@@ -295,6 +295,31 @@ h2 {
     color: var(--white);
 }
 
+@media (max-width: 600px) {
+    .logo {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        display: none;
+    }
+}
+
 .nav-item {
     font-style: normal;
     font-weight: 600;
@@ -303,6 +328,20 @@ h2 {
     text-align: center;
     color: var(--white);
     list-style: none;
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .nav-item {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-item {
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 
 .nav-list {
@@ -318,29 +357,33 @@ h2 {
 
 @media (min-width: 600px) and (max-width: 768px) {
     .nav-list {
-        display: none;
+        display: flex;
+        gap: 20px;
     }
 }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .nav-list {
-        display: none;
-    }
-}
-
 
 /* Гамбургер меню для мобильной версии */
 
-/* .hamburger-menu {
+.hamburger-menu {
     display: none;
 }
 
-@media (max-width: 320px) {
-    .hamburger-menu {
-        display: block;
-    }
-} */
+.hamburger-line {
+    /* display: flex;
+    justify-content: end; */
+    width: 24px;
+    height: 1px;
+    background: var(--white);
+}
 
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+    }
+}
 
 /* Специалисты клиники */
 
@@ -496,13 +539,13 @@ h2 {
 
 @media (max-width: 600px) {
     .cards-doctors-list {
-        /* text-align: center; */
+        text-align: center;
     }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
     .cards-doctors-list {
-        /* text-align: center; */
+        text-align: center;
     }
 }
 
@@ -582,16 +625,6 @@ h2 {
     transition: background-color 300ms linear;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 
 .footer-info {
@@ -665,6 +698,20 @@ h2 {
     color: var(--secondary-semi);
 }
 
+@media (max-width: 600px) {
+    .text-network {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .text-network {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
 .facebook-icon {
     width: 27px;
     height: 27px;
@@ -732,11 +779,39 @@ h2 {
     color: var(--secondary-semi);
 }
 
+@media (max-width: 600px) {
+    .text-contacts {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .text-contacts {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
 .description-contacts {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     color: var(--secondary-semi);
+}
+
+@media (max-width: 600px) {
+    .description-contacts {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .description-contacts {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .contacts-mail {
@@ -778,8 +853,34 @@ h2 {
     color: var(--secondary-semi);
 }
 
+@media (max-width: 600px) {
+    .license-text {
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .license-text {
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
+
 .limiter {
     width: 1px;
     height: 24px;
     background: var(--secondary-semi);
+}
+
+@media (max-width: 600px) {
+    .limiter {
+        height: 19px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .limiter {
+        height: 19px;
+    }
 }
