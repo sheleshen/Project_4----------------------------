@@ -539,22 +539,19 @@ h2 {
 
 @media (max-width: 600px) {
     .cards-doctors-list {
-        text-align: center;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
     .cards-doctors-list {
-        text-align: center;
+        justify-content: center;
     }
 }
 
 .cards-doctors-item {
-    width: calc(100% - var(--gap-doctors-card))/2;
-    /* display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center; */
+    width: calc((100% - var(--gap-doctors-card)*2)/3);
 }
 
 @media (max-width: 600px) {
@@ -565,7 +562,14 @@ h2 {
 
 @media (min-width: 600px) and (max-width: 768px) {
     .cards-doctors-item {
-        width: calc(100% - var(--gap-doctors-card))/2;
+        width: calc(100% - var(--gap-doctors-card));
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cards-doctors-item {
+        width: calc((100% - var(--gap-doctors-card)*1)/2);
     }
 }
 
@@ -583,8 +587,8 @@ h2 {
 }
 
 .img-doctor {
-    /* width: 100%; */
-    height: 100%;
+    width: 100%;
+    /* height: 100%; */
     object-position: center;
     object-fit: cover;
 }
@@ -600,6 +604,21 @@ h2 {
     font-size: 18px;
     line-height: 29px;
     color: var(--dark-middle);
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .full-name {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .full-name {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .job-title {
@@ -607,6 +626,21 @@ h2 {
     font-size: 18px;
     line-height: 29px;
     color: var(--dark-middle);
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .job-title {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .job-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .btn-cards-doctors {
