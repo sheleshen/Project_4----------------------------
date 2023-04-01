@@ -27,7 +27,7 @@
     --grey-elight: #fafafa;
     --white: #ffffff;
     --gap-menu: 47px;
-    --gap-services: 73px;
+    --gap-services: 50px;
     --gap-reviews: 20px;
     --shadow: rgba(115, 115, 115, 0.25);
     --gap-maps: 23px;
@@ -461,6 +461,95 @@ h2 {
 
 /* Услуги */
 
+/* Тестовый блок */
+
+
+/* @keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+}
+  
+@keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+@keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+} */
+
+
+.wrapper {
+    /* max-width: calc(100% - 40px); */
+    position: relative;
+}
+
+.icon-carusel {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    color: var(--secondary-middle);
+    background: var(--main-color-light);
+    border: 1px solid var(--main-color-light);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 45%;
+}
+
+.icon-carusel:hover {
+    color: var(--white);
+    background: var(--secondary-light);
+    border: 1px solid var(--white);
+    transition: all 300ms linear;
+}
+
+.icon-carusel:first-child {
+    left: 0px;
+}
+
+.icon-carusel:last-child {
+    right: 0px;
+}
+
+
+/* конец теста */
+
+
 .title-services {
     padding-top: 80px;
     padding-bottom: 50px;
@@ -497,7 +586,8 @@ h2 {
 .services-list {
     display: flex;
     flex-direction: row;
-    padding: 60px 0;
+    flex-wrap: nowrap;
+    padding: 60px 50px;
     gap: var(--gap-services);
 }
 
@@ -528,8 +618,9 @@ h2 {
     align-content: space-between;
     padding: 20px 25px 25px 20px;
     border-radius: 20px;
-    /* width: 30%; */
-    width: calc((100% - (var(--gap-services)*2))/3);
+    width: calc((100% - var(--gap-services)*2)/3);
+    overflow: hidden;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {
@@ -558,12 +649,27 @@ h2 {
 }
 
 .services-item-img {
+/* background-image: url(/images/service-3.png); */
+    background-size: cover;
+    background-position: top;
+}
+
+.img-services-2 {
+    background-image: 
+    linear-gradient(90deg, rgba(80, 163, 209, 0.57) 16.34%, rgba(0, 0, 0, 0) 96.2%, rgba(4, 4, 4, 0) 96.21%, rgba(0, 0, 0, 0) 96.21%), url(/images/service-1.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.img-services-3 {
+    background-image: 
+    linear-gradient(90deg, rgba(80, 163, 209, 0.57) 16.34%, rgba(0, 0, 0, 0) 96.2%, rgba(4, 4, 4, 0) 96.21%, rgba(0, 0, 0, 0) 96.21%), url(/images/service-2.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.img-services-4 {
     background-image: 
     linear-gradient(90deg, rgba(80, 163, 209, 0.57) 16.34%, rgba(0, 0, 0, 0) 96.2%, rgba(4, 4, 4, 0) 96.21%, rgba(0, 0, 0, 0) 96.21%), url(/images/service-3.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    /* background-image: url(/images/service-3.png); */
-    background-size: cover;
-    background-position: top;
 }
 
 .services-item-number {
@@ -572,12 +678,13 @@ h2 {
     font-size: 26px;
     line-height: 32px;
     color: var(--white);
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .services-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .services-item-description {
@@ -585,11 +692,11 @@ h2 {
     font-size: 16px;
     line-height: 22px;
     color: var(--white);
-    padding-right: 50px;
+    padding-right: 20px;
 }
 
 .icon-arrow {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 
@@ -844,28 +951,6 @@ h2 {
     background-position: top;
     
 }
-
-/* .maps-img::after {                         Вариант №1 осветления
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.5);
-} */
-
-/* .overlay-maps {                             Вариант №2 осветления
-    width: 100%;
-    height: 100%;
-    background-color: var(--main-color-elight);
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-} */
 
 .title-maps {
     padding: 70px 0 50px 0;
