@@ -27,7 +27,7 @@
     --grey-elight: #fafafa;
     --white: #ffffff;
     --gap-menu: 47px;
-    --gap-services: 73px;
+    --gap-services: 50px;
     --gap-reviews: 20px;
     --shadow: rgba(115, 115, 115, 0.25);
     --gap-maps: 23px;
@@ -535,6 +535,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--gap-doctors-card); 
+    justify-content: center;
 }
 
 @media (max-width: 600px) {
@@ -562,8 +563,7 @@ h2 {
 
 @media (min-width: 600px) and (max-width: 768px) {
     .cards-doctors-item {
-        width: calc(100% - var(--gap-doctors-card));
-        
+        width: calc((100% - var(--gap-doctors-card)*1)/2);
     }
 }
 
@@ -584,6 +584,7 @@ h2 {
     box-shadow: 2px 2px 4px rgba(115, 115, 115, 0.25);
     border-radius: 20px;
     overflow: hidden;
+    width: 100%;
 }
 
 .img-doctor {
