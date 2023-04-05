@@ -290,6 +290,12 @@ h2 {
     background-color: var(--secondary-light);
 }
 
+.section-header {
+    position: sticky ;
+    top:0;
+    z-index: 1;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -665,6 +671,8 @@ h2 {
 
 .wrapper {
     position: relative;
+
+    z-index: 0;
 }
 
 .icon-carusel {
