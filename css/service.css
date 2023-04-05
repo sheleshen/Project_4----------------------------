@@ -739,6 +739,37 @@ h2 {
     /* overflow-x: scroll; */
 }
 
+@media (max-width: 600px) {
+    .services-list {
+        /* overflow-x: scroll;
+        -ms-overflow-style: none;
+        padding-bottom: 40px; */
+
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+    }
+
+    .services-list::-webkit-scrollbar {
+        height: 12px;    
+    }
+
+    .services-list::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: var(--grey-elight);
+    }
+
+    .services-list::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: linear-gradient(90deg, var(--secondary-middle), var(--main-color));
+        box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+        width: 20%;
+        border: 2px solid var(--grey-elight);
+    }
+    
+}
+
 /* .elem {
     overflow: auto;
     -ms-overflow-style: none;
@@ -769,6 +800,8 @@ h2 {
 @media screen and (max-width: 600px) {
     .services-item {
         min-width: calc(100%);
+
+        scroll-snap-align: start;
     }
 }
 
