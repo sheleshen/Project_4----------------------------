@@ -491,6 +491,8 @@ h2 {
     z-index: 0;
 }
 
+/* Стрелки иконки */
+
 .icon-carusel {
     width: 34px;
     height: 34px;
@@ -501,7 +503,7 @@ h2 {
     color: var(--secondary-middle);
     background: var(--main-color-light);
     border: 1px solid var(--main-color-light);
-    border-radius: 50%;
+    border-radius: 50%; 
 
     position: absolute;
     top: 45%;
@@ -521,7 +523,6 @@ h2 {
 .icon-carusel:last-child {
     right: 0px;
 }
-
 
 .title-services {
     padding-top: 80px;
