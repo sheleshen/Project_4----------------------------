@@ -744,26 +744,22 @@ h2 {
     gap: var(--gap-services);
     
     overflow: hidden;
-    /* overflow-x: scroll; */
 }
 
 @media (max-width: 600px) {
     .services-list {
-        /* overflow-x: scroll;
-        -ms-overflow-style: none;
-        padding-bottom: 40px; */
-
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scrollbar-width: thin;
+        padding-bottom: 10px;
     }
 
-    /* .services-list::-webkit-scrollbar {
-        height: 12px;    
+    .services-list::-webkit-scrollbar {
+        height: 50px;  
     }
 
-    .services-list::-webkit-scrollbar-track {
+    /* .services-list::-webkit-scrollbar-track {
         border-radius: 10px;
         background: var(--grey-elight);
     }
@@ -776,6 +772,7 @@ h2 {
         border: 2px solid var(--grey-elight);
     } */
 
+
     /* Тестовый вариант, если закрасить тем же цветом, будет ли скролл */
 
     .services-list::-webkit-scrollbar-track {
@@ -786,7 +783,7 @@ h2 {
     .services-list::-webkit-scrollbar-thumb {
         background: var(--secondary-light);
     }
-
+    
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
@@ -795,10 +792,12 @@ h2 {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scrollbar-width: thin;
+        padding-bottom: 10px;
     }
 
     .services-list::-webkit-scrollbar {
-        height: 12px;  
+        /* height: 12px; */
+        height: 50px;  
     }
 
     /* Тестовый вариант, если закрасить тем же цветом, будет ли скролл */
@@ -815,15 +814,17 @@ h2 {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .services-list {
+.services-list {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scrollbar-width: thin;
+        padding-bottom: 10px;
     }
 
     .services-list::-webkit-scrollbar {
-        height: 12px;  
+        /* height: 12px; */
+        height: 50px;  
     }
 
     /* Тестовый вариант, если закрасить тем же цветом, будет ли скролл */
