@@ -503,7 +503,7 @@ h2 {
     color: var(--secondary-middle);
     background: var(--main-color-light);
     border: 1px solid var(--main-color-light);
-    border-radius: 50%; 
+    border-radius: 50%;
 
     position: absolute;
     top: 45%;
@@ -577,10 +577,10 @@ h2 {
     }
 
     .services-list::-webkit-scrollbar {
-        height: 12px;    
+        height: 12px;  
     }
 
-    .services-list::-webkit-scrollbar-track {
+    /* .services-list::-webkit-scrollbar-track {
         border-radius: 10px;
         background: var(--grey-elight);
     }
@@ -591,9 +591,23 @@ h2 {
         box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
         width: 20%;
         border: 2px solid var(--grey-elight);
+    } */
+
+
+    /* Тестовый вариант, если закрасить тем же цветом, будет ли скролл */
+
+    .services-list::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: var(--secondary-light);
+    }
+
+    .services-list::-webkit-scrollbar-thumb {
+        background: var(--secondary-light);
     }
     
 }
+
+
 
 /* #element {
     overflow: auto;

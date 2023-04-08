@@ -759,7 +759,7 @@ h2 {
         scrollbar-width: thin;
     }
 
-    .services-list::-webkit-scrollbar {
+    /* .services-list::-webkit-scrollbar {
         height: 12px;    
     }
 
@@ -774,8 +774,19 @@ h2 {
         box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
         width: 20%;
         border: 2px solid var(--grey-elight);
+    } */
+
+    /* Тестовый вариант, если закрасить тем же цветом, будет ли скролл */
+
+    .services-list::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: var(--secondary-light);
     }
-    
+
+    .services-list::-webkit-scrollbar-thumb {
+        background: var(--secondary-light);
+    }
+
 }
 
 /* .elem {
