@@ -676,11 +676,14 @@ h2 {
 }
 
 .icon-carusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 34px;
     height: 34px;
     cursor: pointer;
-    text-align: center;
-    line-height: 34px;
+    /* text-align: center;
+    line-height: 34px; */
     font-size: 14px;
     color: var(--secondary-middle);
     background: var(--main-color-light);
