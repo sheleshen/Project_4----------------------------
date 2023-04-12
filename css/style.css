@@ -500,8 +500,8 @@ h2 {
     width: 34px;
     height: 34px;
     cursor: pointer;
-    /* text-align: center;
-    line-height: 34px; */
+    text-align: center;
+    /* line-height: 34px; */
     font-size: 14px;
     color: var(--secondary-middle);
     background: var(--main-color-light);
@@ -510,6 +510,12 @@ h2 {
 
     position: absolute;
     top: 45%;
+}
+
+.fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-carusel:hover {
