@@ -491,9 +491,9 @@ h2 {
     border: 1px solid var(--secondary-elight);
 }
 
-.search-doctors:focus-visible {
+/* .search-doctors:focus-visible {
     border: 1px solid var(--secondary-elight);
-}
+} */
 
 @media (max-width: 600px) {
     .search-doctors {
